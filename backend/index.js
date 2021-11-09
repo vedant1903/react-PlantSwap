@@ -2,7 +2,7 @@ const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const { ApolloServerPluginDrainHttpServer } = require("apollo-server-core");
 const http = require("http");
-require("dotenv").config();
+const dotenv = require("dotenv").config({ path: "config/.env" });
 
 const typeDefs = require("./src/graphql/typeDefs");
 const resolvers = require("./src/graphql/resolvers");
