@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for the plant swap web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "lint": "eslint src/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedant1903/react-PlantSwap.git"
+  },
+  "author": "Vedant Deokar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vedant1903/react-PlantSwap/issues"
+  },
+  "homepage": "https://github.com/vedant1903/react-PlantSwap#readme",
+  "dependencies": {
+    "apollo-server-core": "^3.5.0",
+    "apollo-server-express": "^3.5.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^16.0.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
