@@ -10,6 +10,7 @@ const { buildServerContext } = require("./src/graphql/graphql");
 
 const port = process.env.SERVER_PORT || 8000;
 const app = express();
+const db = require("./src/db");
 
 async function startApolloServer(typeDefs, resolvers) {
   const httpServer = http.createServer(app);
@@ -25,7 +26,7 @@ async function startApolloServer(typeDefs, resolvers) {
 
   await new Promise((resolve) => httpServer.listen({ port }, resolve));
   console.log(
-    `Server started at http://localhost:${port}${apolloServer.graphqlPath}`
+    `Apollo server running at http://localhost:${port}${apolloServer.graphqlPath}`
   );
 }
 
